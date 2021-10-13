@@ -5,6 +5,7 @@
 This is the official repository for [our paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Topologically_Consistent_Multi-View_Face_Inference_Using_Volumetric_Sampling_ICCV_2021_paper.pdf) at ICCV 2021. For more information, please check the [project page](https://tianyeli.github.io/tofu).
 
 The code, trained models and example data are coming soon!
+*Update (Oct 13)*: We are waiting for the paperworks of the code/data release. Please stay tuned.
 
 ## Abstract
 
