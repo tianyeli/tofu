@@ -1,0 +1,47 @@
+{
+    "base": {
+        "model_directory": "./results",
+        "experiment_id": "dense_model_run",
+        "seed": 0,
+        "gpu": 0,
+        "option_path": ""
+    },
+    "test": {
+        "test_directory": "./results",
+        "test_data_size": 0,
+        "load_order_path": "",
+        "model_path": "./data/tofu_models/dense_model.pth.tar",
+        "previous_case_dir": "./results/sparse_model_run_sparse_model_15_views/LightStageOpenTest"
+    },
+    "data": {
+        "dataset_id": "",
+        "dataset_directory": "./data/LightStageOpenTest",
+        "split_directory": "",
+        "dataset_size": 0,
+        "thread_num": 4,
+        "processed_directory": "",
+        "train_data_size": 32000,
+        "val_data_size": 64,
+        "query_view_num": 14,
+        "lmk_num": 341,
+        "scale_range": [1.0, 1.0],
+        "crop_size": [512, 376],
+        "brightness_sigma": 0.0,
+        "enable_load_mesh": false
+    },
+    "model": {
+        "descriptor_dim": 8,
+        "feature_arch": "uresnet",
+        "pretrained_path": "",
+        "mesh_resample_path": "./data/tofu_models/resampling_matrices_with_normals.pkl",
+        "mesh_resample_start": 3,
+        "mesh_resample_end": 1,
+        "local_arch": "v2v",
+        "local_voxel_dim": 8,
+        "local_voxel_inc_list": [0.25],
+        "local_net_level": 3,
+        "global_embedding_type": "uv",
+        "eps_perturb": 3e-1,
+        "pretrained_refine_model_path": ""
+    }
+}

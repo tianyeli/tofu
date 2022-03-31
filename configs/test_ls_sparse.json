@@ -1,0 +1,54 @@
+{
+    "base": {
+        "model_directory": "./results",
+        "experiment_id": "sparse_model_run",
+        "seed": 0,
+        "gpu": 0,
+        "option_path": ""
+    },
+    "test": {
+        "test_directory": "./results",
+        "test_data_size": 0,
+        "load_order_path": "",
+        "model_path": "./data/tofu_models/sparse_model.pth.tar",
+        "previous_case_dir": ""
+    },
+    "data": {
+        "dataset_id": "",
+        "dataset_directory": "./data/LightStageOpenTest",
+        "split_directory": "",
+        "dataset_size": 0,
+        "thread_num": 4,
+        "processed_directory": "",
+        "train_data_size": 32000,
+        "val_data_size": 64,
+        "query_view_num": 14,
+        "lmk_num": 341,
+        "scale_range": [1.0, 1.0],
+        "crop_size": [512, 376],
+        "brightness_sigma": 0.0,
+        "enable_load_mesh": false
+    },
+    "model": {
+        "descriptor_dim": 8,
+        "feature_arch": "uresnet",
+        "global_arch": "v2v",
+        "local_arch": "naive_aligner",
+        "pretrained_path": "",
+        "up_factor": 1,
+        "down_factor": 2,
+        "deformable_label": "0,0,0;0,0,0,0;0,0,0,0,0,0;0,0,0",
+        "global_voxel_dim": 32,
+        "global_voxel_inc": 1.0,
+        "global_origin": [
+            0.0,
+            0.0,
+            0.5
+        ],
+        "local_voxel_dim": 16,
+        "local_voxel_inc_list": [
+            0.25,
+            0.125
+        ]
+    }
+}
